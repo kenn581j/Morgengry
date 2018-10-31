@@ -6,37 +6,51 @@ using System.Threading.Tasks;
 
 namespace Morgengry
 {
+    /*
     public class Utility
     {
-        public static double GetValueOfBook(Book vBook)
-        {
-            return vBook.Price;
-        }
+        private static double lowQualityValue = 12.5;
+        private static double mediumQualityValue = 20.0;
+        private static double highQualityValue = 27.5;
+        private static double courseHourValue = 875.00;
+        public static double LowQualityValue { get => lowQualityValue; set { lowQualityValue = value; } }
+        public static double MediumQualityValue { get => mediumQualityValue; set { mediumQualityValue = value; } }
+        public static double HighQualityValue { get => highQualityValue; set { highQualityValue = value; } }
+        public static double CourseHourValue { get => courseHourValue; set { courseHourValue = value; } }
 
-        public static double GetValueOfAmulet(Amulet vAmulet)
+        public static double GetValueOfMerchandise(Merchandise merchandise)
         {
-            double amuletValue = 0;
-            if (vAmulet.Quality == Level.low)
-            {
-                amuletValue = 12.5;
+            double value = 0;
+
+            if(merchandise is Book book)
+            {                
+                value = book.Price;
             }
-            else if (vAmulet.Quality == Level.medium)
-            {
-                amuletValue = 20.0;
+            else if(merchandise is Amulet amulet)
+            {                
+                if (amulet.Quality == Level.low)
+                {
+                    value = LowQualityValue;
+                }
+                else if (amulet.Quality == Level.medium)
+                {
+                    value = MediumQualityValue;
+                }
+                else if (amulet.Quality == Level.high)
+                {
+                    value = HighQualityValue;
+                }
             }
-            else if (vAmulet.Quality == Level.high)
-            {
-                amuletValue = 27.5;
-            }
-            return amuletValue;
+            return value;
         }
 
         public static double GetValueOfCourse(Course vCourse)
         {
             double getHours = vCourse.DurationInMinutes / 60.0;            
             int fullHours = Convert.ToInt32(getHours);
-            double finalPrice = 875 * fullHours;            
+            double finalPrice = CourseHourValue * fullHours;            
             return finalPrice;
         }
     }
+    */
 }

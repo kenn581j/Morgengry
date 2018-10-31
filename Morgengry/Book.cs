@@ -33,6 +33,10 @@ namespace Morgengry
              this(itemId,"")
         {
         }
+        public override double GetValue()
+        {
+            return Price;
+        }
         public override string ToString()
         {
             string v = "ItemId: " + ItemId + ", " + "Title: " + Title + ", " + "Price: " + Price;

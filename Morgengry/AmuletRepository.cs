@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+/*
 namespace Morgengry
 {
     public class AmuletRepository
@@ -22,9 +22,10 @@ namespace Morgengry
             double totalValue = 0;
             foreach (Amulet v in amulets)
             {
-                totalValue += Utility.GetValueOfAmulet(v);
+                totalValue += Utility.GetValueOfMerchandise(v);
             }
             return totalValue;
         }
     }
 }
+*/

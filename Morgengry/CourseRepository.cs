@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Morgengry
 {
+    /*
     public class CourseRepository
-    {
+    {        
         private List<Course> courses = new List<Course>();
         public void AddCourse(Course course)
         {
@@ -27,4 +28,5 @@ namespace Morgengry
             return totalValue;
         }
     }
+    */
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Morgengry
 {
-    public abstract class Merchandise
+    public abstract class Merchandise : IValuable
     {
         public string ItemId
         {
@@ -14,15 +14,14 @@ namespace Morgengry
             set;
         }
 
-        /*public Merchandise(string itemId)
-        {
-            ItemId = itemId;
-        }*/
+        public abstract double GetValue();
+
         public override string ToString()
         {
             string v = "ItemId: " + ItemId;
 
             return v;
         }
+
     }
 }
